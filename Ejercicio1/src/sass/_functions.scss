@@ -1,0 +1,8 @@
+@function shades($color, $tipo, $cambio: n) {
+    @if $tipo=='darken' {
+        @return darken( $color, $cambio);
+    }
+    @if $tipo=='lighten' {
+        @return lighten( $color, $cambio);
+    }
+}

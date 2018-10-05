@@ -1,0 +1,66 @@
+@import "functions.scss";
+html,
+body,
+div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+$baseSize: 14px;
+$colorRojo: #FF0000;
+$colorVerde: #00FF00;
+$colorAzul: #0000FF;
+html {
+    font-family: 'Raleway', sans-serif;
+    font-size: $baseSize;
+}
+
+div {
+    float: left;
+    width: 100px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+    color: white;
+}
+
+.rojo {
+    background-color: $colorRojo;
+}
+
+.verde {
+    background-color: $colorVerde;
+}
+
+.azul {
+    background-color: $colorAzul;
+}
+
+@for $i from 1 through 4 {
+    $cambio: 10% * $i;
+    .rojo-darken-#{$i} {
+        background-color: shades($colorRojo, 'darken', $cambio);
+    }
+    .rojo-lighten-#{$i} {
+        background-color: shades($colorRojo, 'lighten', $cambio);
+    }
+    .verde-darken-#{$i} {
+        background-color: shades($colorVerde, 'darken', $cambio);
+    }
+    .verde-lighten-#{$i} {
+        background-color: shades($colorVerde, 'lighten', $cambio);
+    }
+    .azul-darken-#{$i} {
+        background-color: shades($colorAzul, 'darken', $cambio);
+    }
+    .azul-lighten-#{$i} {
+        background-color: shades($colorAzul, 'lighten', $cambio);
+    }
+}
