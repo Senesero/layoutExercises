@@ -1,0 +1,26 @@
+@function shades($color, $tipo) {
+    @if $tipo=='darken' {
+        @return darken( $color, 30%);
+    }
+    @if $tipo=='lighten' {
+        @return lighten( $color, 30%);
+    }
+}
+
+@function border($tema) {
+    @if $tema=='rojo' {
+        @return 0px;
+    }
+    @if $tema=='azul' {
+        @return 20px;
+    }
+}
+
+@function sombra($tema) {
+    @if $tema=='rojo' {
+        @return -15px 11px 11px 0px rgba(0, 0, 0, 0.75);
+    }
+    @if $tema=='azul' {
+        @return 15px 11px 11px 0px rgba(0, 0, 0, 0.75);
+    }
+}

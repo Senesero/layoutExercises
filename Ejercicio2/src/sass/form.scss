@@ -1,0 +1,32 @@
+@import "colors.scss";
+@import "functions.scss";
+@import "mixins.scss";
+html,
+body,
+div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+// @include tema('azul');
+@include tema('azul');
+section {
+    padding-left: 50px;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 3px;
+    border: black 1px solid;
+    color: white;
+}

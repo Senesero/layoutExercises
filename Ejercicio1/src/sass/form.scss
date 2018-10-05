@@ -1,3 +1,4 @@
+@import "colors.scss";
 @import "functions.scss";
 html,
 body,
@@ -12,9 +13,6 @@ div {
 }
 
 $baseSize: 14px;
-$colorRojo: #FF0000;
-$colorVerde: #00FF00;
-$colorAzul: #0000FF;
 html {
     font-family: 'Raleway', sans-serif;
     font-size: $baseSize;

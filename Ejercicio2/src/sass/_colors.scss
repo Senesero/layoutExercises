@@ -1,0 +1,8 @@
+@function calcularColor($tema) {
+    @if $tema=='rojo' {
+        @return #FF0000;
+    }
+    @if $tema=='azul' {
+        @return #0000FF;
+    }
+}

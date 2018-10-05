@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+@mixin tema($tema) {
+    $color: calcularColor($tema);
+    .base {
+        @include fuente('principal');
+        @include background-color($color);
+    }
+    .important {
+        @include fuente('principal');
+        background-color: shades($color, 'darken');
+    }
+    .warning {
+        @include fuente('principal');
+        background-color: shades($color, 'lighten');
+    }
+    .boxShadow {
+        @include fuente('secundaria');
+        box-shadow: sombra($tema);
+        color: black;
+    }
+    div {
+        border-radius: border($tema);
+    }
+}
+
+@mixin background-color($color) {
+    background-color: $color;
+}
+
+@mixin fuente ($fuente) {
+    @if $fuente=='principal' {
+        font-family: 'Open Sans', sans-serif;
+    }
+    @if $fuente=='secundaria' {
+        font-family: 'Roboto Mono', monospace;
+    }
+    font-size: 14px;
+}
