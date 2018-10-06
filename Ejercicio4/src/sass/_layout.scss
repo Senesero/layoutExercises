@@ -1,0 +1,26 @@
+@mixin base-grid-definition() {
+    display: grid;
+    grid-row-gap: 0;
+    grid-column-gap: 0;
+}
+
+@mixin full-resolution {
+    @include base-grid-definition();
+    grid-template-rows: 50vh 50vh;
+    grid-template-columns: 0.5fr 1.5fr;
+    grid-template-areas: "menu  contenido1" "menu contenido2";
+}
+
+@mixin medium-resolution {
+    @include base-grid-definition();
+    grid-template-rows: 20vh 40vh 40vh;
+    grid-template-columns: auto;
+    grid-template-areas: "menu" "contenido1" "contenido2";
+}
+
+@mixin small-resolution {
+    @include base-grid-definition();
+    grid-template-rows: 2vh 49vh 49vh;
+    grid-template-columns: auto;
+    grid-template-areas: "menu" "contenido1" "contenido2";
+}

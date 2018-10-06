@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  padding: 0;
+  margin: 0; }
+
+.main-display {
+  flex-grow: 1; }
+
+.main-content {
+  margin: 0 auto; }
+
+.menu {
+  grid-area: menu;
+  width: 100%;
+  height: 100%;
+  background-color: pink; }
+
+.menu div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.contenido1 {
+  grid-area: contenido1;
+  background-color: yellow; }
+
+.contenido2 {
+  grid-area: contenido2;
+  background-color: blue; }
+
+@media screen and (min-width: 90rem) {
+  .main-content {
+    width: 80%;
+    display: grid;
+    grid-row-gap: 0;
+    grid-column-gap: 0;
+    grid-template-rows: 50vh 50vh;
+    grid-template-columns: 0.5fr 1.5fr;
+    grid-template-areas: "menu  contenido1" "menu contenido2"; }
+  .menu {
+    display: flex;
+    flex-direction: column; }
+  .menu div {
+    height: 33.33%; } }
+
+@media screen and (max-width: 89.99rem) and (min-width: 75rem) {
+  .main-content {
+    width: 90%;
+    display: grid;
+    grid-row-gap: 0;
+    grid-column-gap: 0;
+    grid-template-rows: 50vh 50vh;
+    grid-template-columns: 0.5fr 1.5fr;
+    grid-template-areas: "menu  contenido1" "menu contenido2"; }
+  .menu {
+    display: flex;
+    flex-direction: column; }
+  .menu div {
+    height: 33.33%; } }
+
+@media screen and (max-width: 74.99rem) and (min-width: 48rem) {
+  .main-content {
+    display: grid;
+    grid-row-gap: 0;
+    grid-column-gap: 0;
+    grid-template-rows: 20vh 40vh 40vh;
+    grid-template-columns: auto;
+    grid-template-areas: "menu" "contenido1" "contenido2"; }
+  .menu {
+    display: flex; }
+  .menu div {
+    height: 100%; } }
+
+@media screen and (max-width: 47.99rem) {
+  .main-content {
+    display: grid;
+    grid-row-gap: 0;
+    grid-column-gap: 0;
+    grid-template-rows: 2vh 49vh 49vh;
+    grid-template-columns: auto;
+    grid-template-areas: "menu" "contenido1" "contenido2"; }
+  .menu {
+    display: flex; }
+  .menu div {
+    height: 100%; } }

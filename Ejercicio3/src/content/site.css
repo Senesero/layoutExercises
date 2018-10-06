@@ -1,0 +1,82 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+div.cabecera {
+    width: 100%;
+    display: flex;
+}
+
+.cabecera div {
+    width: 100%;
+    background-color: rgb(245, 226, 229);
+}
+
+.logo {
+    padding-left: 30px;
+    text-align: start;
+}
+
+.titulo {
+    text-align: center;
+}
+
+.usuario {
+    padding-right: 30px;
+    text-align: end;
+}
+
+.contenido {
+    width: 100%;
+    height: 100vh;
+}
+
+.menu {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    text-align: center;
+}
+
+.menu div {
+    width: 100%;
+    border: black 2px solid;
+    font-size: 15px;
+}
+
+a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .titulo {
+        display: none;
+    }
+    .menu div {
+        font-size: 10px;
+    }
+}
+
+@media all and (min-width: 600px) {
+    .menu {
+        order: 1;
+    }
+    .contenido {
+        order: 2;
+    }
+}

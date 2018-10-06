@@ -1,6 +1,14 @@
 @import "colors.scss";
 @import "functions.scss";
 @import "mixins.scss";
+
+/* CODIGO PARA CAMBIAR DE TEMA */
+
+// @include tema('azul');
+@include tema('rojo');
+
+/* CODIGO PARA CAMBIAR DE TEMA */
+
 html,
 body,
 div {
@@ -13,8 +21,6 @@ div {
     background: transparent;
 }
 
-// @include tema('azul');
-@include tema('azul');
 section {
     padding-left: 50px;
 }

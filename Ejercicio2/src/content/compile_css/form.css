@@ -1,5 +1,31 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+/* CODIGO PARA CAMBIAR DE TEMA */
+.base {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  background-color: #FF0000; }
+
+.important {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  background-color: #660000; }
+
+.warning {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  background-color: #ff9999; }
+
+.boxShadow {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 14px;
+  box-shadow: -15px 11px 11px 0px rgba(0, 0, 0, 0.75);
+  color: black; }
+
+div {
+  border-radius: 0px; }
+
+/* CODIGO PARA CAMBIAR DE TEMA */
 html,
 body,
 div {
@@ -10,30 +36,6 @@ div {
   font-size: 100%;
   vertical-align: baseline;
   background: transparent; }
-
-.base {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-  background-color: #0000FF; }
-
-.important {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-  background-color: #000066; }
-
-.warning {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-  background-color: #9999ff; }
-
-.boxShadow {
-  font-family: 'Roboto Mono', monospace;
-  font-size: 14px;
-  box-shadow: 15px 11px 11px 0px rgba(0, 0, 0, 0.75);
-  color: black; }
-
-div {
-  border-radius: 20px; }
 
 section {
   padding-left: 50px; }
